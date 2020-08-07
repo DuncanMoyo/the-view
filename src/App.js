@@ -4,7 +4,7 @@ import Header from './components/header_footer/Header'
 
 function App() {
   return (
-    <div>
+    <div style={{height: '1500px', backgroundColor: 'indigo'}}>
      <Header />
     </div>
   );
