@@ -40,7 +40,7 @@ const VenueInfo = () => {
                   Event Location
                 </div>
                 <div className='vn_desc'>
-                  In Daniel's Room
+                  Daniel's Room
                 </div>
               </div>
             </div>
