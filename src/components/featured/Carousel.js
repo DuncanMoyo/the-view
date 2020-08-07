@@ -17,6 +17,7 @@ const Carousel = () => {
       style={{ overflow: "hidden", height: `${window.innerHeight}px` }}
     >
       <Slider {...settings}>
+        {/* will loop this later */}
         <div>
           <div
             className="carrousel_image"
