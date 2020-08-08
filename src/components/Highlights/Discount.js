@@ -1,24 +1,23 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
-
+import MyButton from "../UI/MyButton";
 class Discount extends Component {
-
   state = {
     discountStart: 0,
-    discountEnd: 30
-  }
+    discountEnd: 30,
+  };
 
   percentage = () => {
-    if(this.state.discountStart < this.state.discountEnd) {
-      this.setState({discountStart: this.state.discountStart + 1})
+    if (this.state.discountStart < this.state.discountEnd) {
+      this.setState({ discountStart: this.state.discountStart + 1 });
     }
-  }
+  };
 
   componentDidUpdate() {
     setTimeout(() => {
-      this.percentage()
-    }, 30)
+      this.percentage();
+    }, 30);
   }
 
   render() {
@@ -27,7 +26,7 @@ class Discount extends Component {
         <div className="discount_wrapper">
           <Fade onReveal={() => this.percentage()}>
             <div className="discount_percentage">
-    <span>{this.state.discountStart}%</span>
+              <span>{this.state.discountStart}%</span>
               <span>OFF</span>
             </div>
           </Fade>
@@ -40,7 +39,12 @@ class Discount extends Component {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <div>Button</div>
+              <MyButton
+                text="Purchase tickets"
+                bck="#ffa800"
+                color="#ffffff"
+                link="https://www.google.com/"
+              />
             </div>
           </Slide>
         </div>
