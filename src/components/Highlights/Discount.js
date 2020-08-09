@@ -36,7 +36,7 @@ class Discount extends Component {
           <Slide right>
             <div className="discount_description">
               <h3>{discountAlert}</h3>
-              <p>{discountAlert}</p>
+              <p>{discountDetails}</p>
               <MyButton
                 text="Purchase tickets"
                 bck="#ffa800"

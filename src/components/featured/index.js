@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
 import Countdown from "./Countdown";
-import WebsiteData from "../WebsiteData";
 import websiteData from "../WebsiteData";
 
 const { artistName } = websiteData;
