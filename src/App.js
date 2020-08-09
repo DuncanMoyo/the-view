@@ -11,7 +11,7 @@ import { Element } from "react-scroll";
 
 function App() {
   return (
-    <div style={{ height: "1500px", backgroundColor: "indigo" }}>
+    <div style={{ height: "1500px" }}>
       <Header />
       <Element name="featured">
         <Featured />

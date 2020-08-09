@@ -19,7 +19,7 @@ const Carousel = () => {
       <Slider {...settings}>
         {arianaImage.map((arianaImage) => {
           return (
-            <div>
+            <div key={arianaImage}>
               <div
                 className="carrousel_image"
                 style={{

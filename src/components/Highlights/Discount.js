@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import MyButton from "../UI/MyButton";
+import websiteData from "../WebsiteData";
+
+const { discountAlert, discountDetails } = websiteData;
 class Discount extends Component {
   state = {
     discountStart: 0,
@@ -32,13 +35,8 @@ class Discount extends Component {
           </Fade>
           <Slide right>
             <div className="discount_description">
-              <h3>Purchase tickets before the 1st of December</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <h3>{discountAlert}</h3>
+              <p>{discountAlert}</p>
               <MyButton
                 text="Purchase tickets"
                 bck="#ffa800"

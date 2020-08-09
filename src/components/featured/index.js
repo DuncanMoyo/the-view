@@ -1,15 +1,17 @@
-import React from 'react';
-import Carousel from './Carousel';
-import Countdown from './Countdown'
+import React from "react";
+import Carousel from "./Carousel";
+import Countdown from "./Countdown";
+import WebsiteData from "../WebsiteData";
+import websiteData from "../WebsiteData";
+
+const { artistName } = websiteData;
 
 const Featured = () => {
   return (
-    <div style={{position: 'relative'}}>
+    <div style={{ position: "relative" }}>
       <Carousel />
-      <div className='artist_name'>
-        <div className='wrapper'>
-          Ariana Grande
-        </div>
+      <div className="artist_name">
+        <div className="wrapper">{artistName}</div>
       </div>
       <Countdown />
     </div>
