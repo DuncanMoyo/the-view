@@ -5,7 +5,7 @@ import TicketIcon from "../../assets/images/icons/ticket.png";
 const MyButton = (props) => {
   return (
     <Button
-      href={props.link}
+      href={props.linkTo}
       variant="contained"
       size="small"
       style={{ background: props.bck, color: props.color }}
