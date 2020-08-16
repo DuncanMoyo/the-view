@@ -6,11 +6,11 @@ const Countdown = ({ deadline }) => {
   const [hours, setHours] = useState("0");
   const [minutes, setMinutes] = useState("0");
   const [seconds, setSeconds] = useState("0");
-  const [myObject, setMyObject] = useState([
-    { name: "Duncan", sport: "walking" },
-  ]);
+  // const [myObject, setMyObject] = useState([
+  //   { name: "Duncan", sport: "walking" },
+  // ]);
 
-  setMyObject([{ ...myObject, sport: "breast manipulation" }]);
+  // setMyObject([{ ...myObject, sport: "breast manipulation" }]);
 
   useEffect(() => {
     setInterval(() => getTimeUntil("Dec, 16, 2020"), 1000);
